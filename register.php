@@ -91,5 +91,19 @@
 	</section>
 
 	<script src="js/login.js"></script>
+
+<?php 
+
+session_start();
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+	$_SESSION['name'] = $_POST['name'];
+	$_SESSION['passwrd'] = $_POST['name'];
+}
+
+
+?>
+
+
 </body>
 </html>
